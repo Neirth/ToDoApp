@@ -1,0 +1,9 @@
+main {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+main h1 {
+    font-family: 'Arial', Times, serif
+}

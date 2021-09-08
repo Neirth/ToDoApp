@@ -1,0 +1,12 @@
+[requires]
+fruit/3.6.0
+jsoncpp/1.9.4
+sqlite3/3.36.0
+
+[options]
+jsoncpp:shared = False
+fruit:use_boost = False
+sqlite3:build_executable = False
+
+[generators]
+cmake_find_package
