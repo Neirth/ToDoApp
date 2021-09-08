@@ -12,7 +12,7 @@ A small example of why these techniques may not be sufficient for the needs of y
 
 ## Installation
 
-Peding of explain this
+Pending of explain this
 
 ## Usage
 
