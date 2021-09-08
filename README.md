@@ -3,7 +3,7 @@
 This is a Todo WebApplication using C++ and IndexedDB as base.
 
 # Why this project?
-This project is designed to testing a mix of technogies, such as Asm.js, Fruit (From Google), IndexedDB, Conan, JsonCPP, and WebComponents. This project, trutly, it won't make your life easier, but can inspire for make a more useful and interesting project with C++ for Web Platforms.
+This project is designed to testing a mix of technologies, such as Asm.js, Fruit (From Google), IndexedDB, Conan, JsonCPP, and WebComponents. This project, trutly, it won't make your life easier, but can inspire for make a more useful and interesting project with C++ for Web Platforms.
 
 Even so, if your idea is to have the panacea of writing a single application for the Web, iOS or Android. I highly recommend watching Kotlin Multiplatform or Flutter, it will save you a lot of headaches.
 
