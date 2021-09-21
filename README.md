@@ -1,4 +1,6 @@
-# Todo Web App
+<p align="center">
+  <img src="./assets/Logo.png?raw=true">
+</p>
 
 This is a Todo WebApplication using C++ and IndexedDB as base.
 
