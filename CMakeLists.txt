@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.19)
+cmake_minimum_required(VERSION 3.13.1) 
 
 # Include compiler configuration
 include(${CMAKE_SOURCE_DIR}/script/cmake/CompilerConfiguration.cmake)
@@ -7,7 +7,7 @@ include(${CMAKE_SOURCE_DIR}/script/cmake/CompilerConfiguration.cmake)
 project(ToDoApp CXX)
 
 # Set compiler parameters 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Oz -s DISABLE_EXCEPTION_CATCHING=0")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -s DISABLE_EXCEPTION_CATCHING=0")
 
 # Include package manager script 
 include(${CMAKE_SOURCE_DIR}/script/cmake/PackageManager.cmake)
