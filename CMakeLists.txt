@@ -35,7 +35,7 @@ add_executable(
     src/main/cpp/io/neirth/todoapp/bridge/webassembly/BusinessLayer.cc
 )
 
-set(MODULE_OPTS " -s MODULARIZE=1 -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s STRICT=1")
+set(MODULE_OPTS " -s MODULARIZE=1 -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s STRICT=1 's ENVIRONMENT=\"web\"")
 set(COMMON_OPTS " -s ALLOW_MEMORY_GROWTH=1 -s WASM=1 -s SINGLE_FILE=1 -s FILESYSTEM=0 -s DISABLE_EXCEPTION_CATCHING=0 --bind --no-entry")
 set(ASYNCIFY_OPTS " -s ASYNCIFY -s ASYNCIFY_IMPORTS=[\"insert_task_js\",\"update_task_js\",\"delete_task_js\",\"find_by_id_task_js\",\"find_all_task_js\"]")
 

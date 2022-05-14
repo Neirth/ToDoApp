@@ -15,8 +15,11 @@ A small example of why these techniques may not be sufficient for the needs of y
 ## Installation
 
 For build this project, we must be configure before a Conan Dependency System, Cmake Build System and Emscripten WebAssembly SDK
+
+The same steps are required if we desired develop the project using Visual Studio Code, please, in this case, run these commands before start developing:
+
 ```bash
-[neirth@codespace todoapp]$ mkdir buildjs && cd buildjs
+[neirth@codespace todoapp]$ mkdir buildjs && cd buildjs # or name the folder as 'build' for develop with Visual Studio Code
 [neirth@codespace buildjs]$ conan install -pr ../emscripten.profile ../conanfile.txt --build=fruit --build=jsoncpp --build=sqlite3
 [neirth@codespace buildjs]$ emcmake cmake build ..
 [neirth@codespace buildjs]$ make -j 8
