@@ -10,5 +10,4 @@ endif()
 include(${CMAKE_BINARY_DIR}/conan.cmake)
 
 # Configuration of Conan
-conan_cmake_autodetect(settings)
-conan_cmake_install(PATH_OR_REFERENCE ${CMAKE_SOURCE_DIR} PROFILE ../emscripten.profile BUILD missing REMOTE conan-center SETTINGS ${settings})
+conan_cmake_install(PATH_OR_REFERENCE ${CMAKE_SOURCE_DIR} PROFILE ../emscripten.profile BUILD missing REMOTE conancenter SETTINGS ${settings})

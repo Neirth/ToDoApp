@@ -16,10 +16,11 @@ A small example of why these techniques may not be sufficient for the needs of y
 
 For build this project, we must be configure before a Conan Dependency System, Cmake Build System and Emscripten WebAssembly SDK
 ```bash
-[neirth@beastdragon todoapp]$ mkdir build && cd build
-[neirth@beastdragon build]$ conan install -pr ../emscripten.profile ../conanfile.txt --build=fruit --build=jsoncpp --build=sqlite3
-[neirth@beastdragon build]$ emcmake cmake build ..
-[neirth@beastdragon build]$
+[neirth@codespace todoapp]$ mkdir buildjs && cd buildjs
+[neirth@codespace buildjs]$ conan install -pr ../emscripten.profile ../conanfile.txt --build=fruit --build=jsoncpp --build=sqlite3
+[neirth@codespace buildjs]$ emcmake cmake build ..
+[neirth@codespace buildjs]$ make -j 8
+[neirth@codespace buildjs]$
 ```
 
 ## Usage
@@ -27,8 +28,8 @@ For build this project, we must be configure before a Conan Dependency System, C
 After build the project, copy the content of the folder __./example__ into your web server, or run this
 
 ```bash
-[neirth@beastdragon todoapp]$ cd ./example
-[neirth@beastdragon example]$ python -m http.server
+[neirth@codespace todoapp]$ cd ./example
+[neirth@codespace example]$ python -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
