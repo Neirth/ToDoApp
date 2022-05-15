@@ -19,7 +19,8 @@ For build this project, we must be configure before a Conan Dependency System, C
 The same steps are required if we desired develop the project using Visual Studio Code, please, in this case, run these commands before start developing:
 
 ```bash
-[neirth@codespace todoapp]$ mkdir buildjs && cd buildjs # or name the folder as 'build' for develop with Visual Studio Code
+[neirth@codespace todoapp]$ mkdir buildjs && cd buildjs # or name the folder as 'build' for develop with Visual Studio 
+[neirth@codespace buildjs]$ sed -i 's/codespace/{YOUR_UNIX_USERNAME}/g' ../emscripten.profile # For point into correct emsdk path
 [neirth@codespace buildjs]$ conan install -pr ../emscripten.profile ../conanfile.txt --build=fruit --build=jsoncpp --build=sqlite3
 [neirth@codespace buildjs]$ emcmake cmake build ..
 [neirth@codespace buildjs]$ make -j 8
